@@ -9,7 +9,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers().AddJsonOptions(options => {
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowDevOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173");
+    });
+});
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
     options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicies.SnakeCaseLower;
 });
 
@@ -24,6 +33,8 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowDevOrigin");
 
 app.UseAuthorization();
 
