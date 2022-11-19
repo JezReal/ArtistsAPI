@@ -26,7 +26,7 @@ public class ArtistsController : ControllerBase
                 Id = 2,
                 Image = "https://i.scdn.co/image/ab6761610000e5ebdd353edbce04267bff979de6",
                 ArtistName = "Polyphia",
-                ArtistDescription = "olyphia is not only the biggest, but also the best metal band in the world. No other act has managed to marry a masterful command of melody with hip hop rhythms and dark and sinister tones in such an enticing way – and they’ve done so without the crutch of sing-along vocals. In challenging the generally accepted constant that dark and technical music has to be atonal and undanceable, the four members of Polyphia have done their part to advance the world of instrumental rock in a manner that has seldom been matched in the history of the genre."
+                ArtistDescription = "Polyphia is not only the biggest, but also the best metal band in the world. No other act has managed to marry a masterful command of melody with hip hop rhythms and dark and sinister tones in such an enticing way – and they’ve done so without the crutch of sing-along vocals. In challenging the generally accepted constant that dark and technical music has to be atonal and undanceable, the four members of Polyphia have done their part to advance the world of instrumental rock in a manner that has seldom been matched in the history of the genre."
             },
             new ArtistWithIdDto {
                 Id = 3,
